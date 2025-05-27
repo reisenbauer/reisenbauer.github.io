@@ -46,15 +46,21 @@
             width: 100%;
             height: 100%;
             z-index: 1000;
-            opacity: 0.8;
+            opacity: 0.4;
         }
     </style>
 </head>
 <body>
     <div class="blur">xx</div>
     <div class="video">
-        <video src="bg.mp4" playsinline loop autoplay muted />
+        <video id="video" src="bg2.mp4" playsinline loop autoplay muted />
     </div>
-    <div class="domain">rest.ceo</div>
+    <div class="domain" id="domain"></div>
+    <script>
+        setInterval(() => {
+                document.title = location.host;
+                document.getElementById("domain").innerHTML = location.host;
+        }, 10)
+    </script>
 </body>
 </html>
