@@ -1,1 +1,6 @@
-{"m.homeserver":{"base_url":"https://matrixvie.reisenbauer.at/"},"im.vector.riot.jitsi":{"preferredDomain":"virtual.chaosdorf.space"}}
+{"m.homeserver":{"base_url":"https://matrixvie.reisenbauer.at/"},"im.vector.riot.jitsi":{"preferredDomain":"virtual.chaosdorf.space"},"org.matrix.msc4143.rtc_foci": [
+ {
+  "type": "livekit",
+  "livekit_service_url": "https://livekit-jwt.call.matrix.org"
+ }
+]}
